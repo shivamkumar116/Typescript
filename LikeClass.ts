@@ -20,13 +20,23 @@ export class Like {
     this._LikeCount = value;
   }
 
-  like(): void {
+  //   like(): void {
+  //     if (this.isSelected == false) {
+  //       this.isSelected = true;
+  //       this.LikeCount += 1;
+  //     } else if ((this.isSelected = true)) {
+  //       this.LikeCount -= 1;
+  //       this.isSelected = false;
+  //     }
+  //   }
+
+  c = () => {
     if (this.isSelected == false) {
-      this.isSelected = true;
       this.LikeCount += 1;
-    } else if ((this.isSelected = true)) {
-      this.LikeCount -= 1;
+      this.isSelected = true;
+    } else if (this.isSelected == true) {
       this.isSelected = false;
+      this.LikeCount -= 1;
     }
-  }
+  };
 }
